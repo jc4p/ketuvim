@@ -1,19 +1,20 @@
 
 const RecommendationTile = ({position, title, author, publicationYear, children}) => (
-  <div className='mb-16 mx-4 md:mx-0'>
-    <div className='flex flex-col md:flex-row items-center'>
-      <div className='w-80'>
-        <img src='https://i.imgur.com/ohjK97K.jpg' className='w-100' />
+  <div className='mb-24 mx-4 md:mx-0 relative'>
+    <div className='flex flex-col md:flex-row items-left md:items-center'>
+      <div className='w-4/5'>
+        <img src='https://i.imgur.com/ohjK97K.jpg' className='w-100 drop-shadow-2xl' />
       </div>
-      <div className='pt-6 md:pt-0 md:pl-6'>
-        {/* <p className='text-base font-normal font-mono mb-2'>{position}.</p> */}
-        <p className='text-3xl font-gothic mt-2 md:mt-0 text-royal-red'>
-          {title}
+      <div className='absolute w-4/5 pr-0 md:pr-14 top-1/3 md:top-56 left-16 md:left-1/4'>
+        <p className='text-3xl md:text-5xl font-gothic font-bold mt-2 md:mt-0 text-black break-words'>
+        {title}
         </p>
+        {/*
         <p className='text-base font-sans font-normal mt-1'>
           {author}, {publicationYear}
         </p>
-        <p className='mt-4 text-base max-w-prose text-justify'>
+        */}
+        <p className='mt-4 text-base max-w-prose text-justify hidden'>
           {children}
         </p>
       </div>

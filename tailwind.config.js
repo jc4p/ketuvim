@@ -21,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['proxima-nova', 'ui-sans-serif', 'sans-serif'],
-        gothic: ['gothic-open-shaded', 'ui-sans-serif', 'sans-serif']
+        gothic: ['gravesend-sans', 'ui-sans-serif', 'sans-serif']
       },
     },
   },

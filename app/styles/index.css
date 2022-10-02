@@ -1,0 +1,15 @@
+.book-title {
+  text-align: right;
+  width: 80%;
+  left: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-title {
+    left: 110px;
+  }
+}
+
+.blur-xxs {
+  --tw-blur: blur(2px);
+}
